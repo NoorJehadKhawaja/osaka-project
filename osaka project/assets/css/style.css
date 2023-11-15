@@ -1,0 +1,127 @@
+:root{
+    --maincolor:#ff206e;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: var(--maincolor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--maincolor);
+}
+
+
+.header{
+    background-image: url(assets/img/bg_osaka.jpg);
+   background-size: cover; 
+   background-position: center;
+}
+
+.header .header-content a{
+    color: var(--maincolor);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    transition: background-color 1s;
+}
+
+.social-media .icon:hover{
+    background-color: var(--maincolor);
+
+}
+
+
+.about {
+    background-image: url(assets/img/light_dot.jpg);
+}
+.title h2{
+    font-size:4rem;
+    letter-spacing: 13px;
+    color: #cacaca;
+    font-weight: 900;
+}
+.title h3{
+    font-size:2rem;
+    font-weight: 900;
+}
+
+.about .about-content p:first-of-type{
+    color: var(--maincolor);
+
+}
+
+.services{
+    background-image: url(assets/img/dark_dot.jpg);
+}
+.services h2{
+    color:#222;
+}
+
+.services h3{
+    color:white;
+}
+
+.services .container p{
+    color: white;
+}
+.services .service-item h3:after {
+    content:'';
+    position: absolute;
+    top:90px;
+    left:50%;
+    transform: translateX(-50%);
+    width:10%;
+    height:3px;
+    background-color:var(--maincolor);
+    transition: width 2s ;
+}
+.services .service-item:hover h3:after{
+    width: 30%;
+
+}
+
+.service-item .icon{
+    background-color: #000;
+    transition:  background-color 2s;
+}
+
+.service-item:hover .icon{
+    background-color: var(--maincolor) !important;
+}
+
+.clients{
+    background-image: url(assets/img/light_dot.jpg);
+}
+.client img{
+    width:130px;
+    height:130px;
+}
+
+.clients .carousel-inner p{
+    margin: auto !important;
+}
+
+.carousel-indicators [data-bs-target]{
+     text-indent: 0;
+     border-radius: 50%; 
+     height: 30px;   
+     
+}
+
+.project {
+    background-image: url(assets/img/dark_dot.jpg);
+}
+.nav-tabs {
+    justify-content: center;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--maincolor);
+    border: none;
+}
+
+.nav-tabs .nav-link {
+   color: #fff;
+   border: none;
+}
